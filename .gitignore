@@ -1,0 +1,10 @@
+target/classes
+target/generated-sources
+target/test-classes
+target/generated-test-sources
+target/maven-archiver
+target/maven-status
+target/plugins.lnk
+target/original-FastCore-1.0.0.jar
+/.idea
+.gitattributes

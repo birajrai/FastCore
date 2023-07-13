@@ -1,0 +1,375 @@
+name: FastCore
+version: ${project.version}
+main: me.birajrai.core.FastCore
+api-version: 1.16
+authors: [ MrBiraj ]
+description: Better core for practicepvp & hub also usable for big networks.
+loadbefore:
+  - FastBungee
+permissions:
+  fcore.resetstats:
+    description: Permission
+  fcore.unbounty:
+    description: Permission
+  fcore.economycommand:
+    description: Permission
+  fcore.ban:
+    description: Permission
+  fcore.blacklist:
+    description: Permission
+  fcore.clearhistory:
+    description: Permission
+  fcore.history:
+    description: Permission
+  fcore.kick:
+    description: Permission
+  fcore.mute:
+    description: Permission
+  fcore.warn:
+    description: Permission
+  fcore.unban:
+    description: Permission
+  fcore.unblacklist:
+    description: Permission
+  fcore.unmute:
+    description: Permission
+  fcore.alts:
+    description: Permission
+  fcore.broadcast:
+    description: Permission
+  fcore.buildmode:
+    description: Permission
+  fcore.clearchat:
+    description: Permission
+  fcore.clear:
+    description: Permission
+  fcore.echest:
+    description: Permission
+  fcore.echest.others:
+    description: Permission.
+  fcore.staffalerts:
+    description: Permission
+  fcore.feed:
+    description: Permission
+  fcore.fly:
+    description: Permission
+  fcore.fly.others:
+    description: Permission
+  fcore.freeze:
+    description: Permission
+  fcore.gamemode:
+    description: Permission
+  fcore.heal:
+    description: Permission
+  fcore.invsee:
+    description: Permission
+  fcore.modmode:
+    description: Permission
+  fcore.mutechat:
+    description: Permission
+  fcore.seen:
+    description: Permission
+  fcore.seen.ip:
+    description: Permission
+  fcore.servermanager:
+    description: Permission
+  fcore.speed:
+    description: Permission
+  fcore.sudo:
+    description: Permission
+  fcore.teleport:
+    description: Permission
+  fcore.teleport.all:
+    description: Permission
+  fcore.teleportrequest:
+    description: Permission.
+  fcore.vanish:
+    description: Permission
+  fcore.chats.build:
+    description: Permission.
+  fcore.chats.staff:
+    description: Permission
+  fcore.chats.admin:
+    description: Permission
+  fcore.chats.management:
+    description: Permission
+  fcore.chatcolor:
+    description: Permission
+  fcore.chatcolor.bypass:
+    description: Permission.
+  fcore.cleargranthistory:
+    description: Permission
+  fcore.clearreports:
+    description: Permission
+  fcore.grant:
+    description: Permission
+  fcore.granthistory:
+    description: Permission
+  fcore.nick:
+    description: Permission
+  fcore.rank:
+    description: Permission
+  fcore.rankdisguise:
+    description: Permission
+  fcore.reporthistory:
+    description: Permission
+  fcore.tag:
+    description: Permission
+  fcore.mutechat.bypass:
+    description: Permission
+  fcore.user:
+    description: Permission.
+  fcore.silent:
+    description: Permission.
+  fcore.powertool:
+    description: Permission.
+  fcore.find:
+    description: Permission.
+  fcore.server:
+    description: Permission.
+  fcore.send:
+    description: Permission.
+  fcore.glist:
+    description: Permission.
+  fcore.skull:
+    description: Permission.
+  fcore.itemname:
+    description: Permission.
+  fcore.reload:
+    description: Permission.
+commands:
+  Setrank:
+    description: Set a players rank.
+    aliases: [sr, srank]
+  Warn:
+    description: Warn a player.
+  Kick:
+    description: Kick a player.
+  Mute:
+    description: Mute a player.
+  Unmute:
+    description: Unmute a player.
+  Tempmute:
+    description: Temporarily mute a player.
+  Ban:
+    description: Ban a player.
+  Unban:
+    description: Unban a player.
+  Tempban:
+    description: Temporarily ban a player.
+  Blacklist:
+    description: Blacklist an IP address.
+  Unblacklist:
+    description: Unblacklists an IP address.
+  History:
+    description: View a players punishment history.
+    aliases: [c, hist]
+  ClearHistory:
+    description: Clear a players punishment history.
+    aliases: [ch, clearhist]
+  Grant:
+    description: Grant a player a rank.
+  Grants:
+    description: View a players grant history.
+    aliases: [cg, granthistory, granthist]
+  Ungrant:
+    description: Revoke a players grant.
+  ClearGrantHistory:
+    description: Clear a players grant history.
+    aliases: [cgh, cleargranthist]
+  BuildChat:
+    description: Talk privately with builders.
+    aliases: [bldc]
+  StaffChat:
+    description: Talk privately with staff members.
+    aliases: [sc]
+  AdminChat:
+    description: Talk privately with admins and above.
+    aliases: [ac]
+  ManagementChat:
+    description: Talk privately with managers and above.
+    aliases: [mc]
+  ToggleStaffAlerts:
+    description: Toggle on or off staff alerts.
+    aliases: tsa
+  Vanish:
+    description: Vanish yourself or another player.
+    aliases: [v]
+  Gamemode:
+    description: Change your or another players gamemode.
+    aliases: gm
+  Gmc:
+    description: Enter creative mode.
+    aliases: gm1
+  Gms:
+    description: Enter Survival mode.
+    aliases: gm0
+  Gmsp:
+    description: Enter spectator mode.
+    aliases: gm2
+  Gma:
+    description: Enter adventure mode.
+    aliases: gm3
+  Heal:
+    description: Heal yourself or another player.
+  Feed:
+    description: Feed yourself or another player.
+  Clear:
+    description: Clear your or another players inventory.
+    aliases: ci
+  ClearChat:
+    description: Clear the chat.
+  MuteChat:
+    description: Mute the chat.
+    aliases: mgc
+  Fly:
+    description: Change your or another players fly mode.
+  Teleport:
+    description: Teleport yourself to another player, or teleport a player to you, or teleport a player to another player.
+    aliases: tp
+  TeleportHere:
+    description: Teleport another player to you.
+    aliases: tphere
+  TeleportAll:
+    description: Teleport all players to yourself.
+    aliases: tpall
+  TeleportA:
+    description: Send a teleport request to someone.
+    aliases: tpa
+  TeleportAccept:
+    description: Accept a teleport request.
+    aliases: [tpaccept, tpaaccept, tpyes]
+  TeleportDeny:
+    description: Deny a teleport request.
+    aliases: [tpdeny, tpadeny, tpyes]
+  TeleportCancel:
+    description: Cancel your teleport request.
+    aliases: [tpc, tpcancel]
+  Freeze:
+    description: Freeze a player.
+    aliases: ss
+  Modmode:
+    description: Put you or another player into modmode.
+    aliases: mod
+  Report:
+    description: Report a player for breaking the rules.
+  BuildMode:
+    description: Toggle your build mode.
+    aliases: build
+  ToggleMessages:
+    description: Toggle your private messages.
+    aliases: tpm
+  Alts:
+    description: Get a players alternate accounts.
+  OnlinePlayers:
+    description: Get all online players.
+    aliases: [list, whois]
+  Invsee:
+    description: See a players inventory.
+  Rank:
+    description: Add or remove ranks.
+  ChatColor:
+    description: Change your chat color.
+    aliases: cc
+  Broadcast:
+    description: Broadcast a message to the server.
+    aliases: [alert, bc]
+  Settings:
+    description: Change your player settings.
+    aliases: options
+  Speed:
+    description: Change your or another players speed.
+  Sudo:
+    description: Make a player run a command or type something in chat.
+  Balance:
+    description: Get your or another players balance.
+    aliases: [bal, money]
+  Bounty:
+    description: Bounty a player.
+  Pay:
+    description: Pay a player.
+  Unbounty:
+    description: Unbounty a player.
+  Economy:
+    description: Manage the economy.
+    aliases: eco
+  Stats:
+    description: View a players stats.
+  ResetStats:
+    description: Reset a players stats.
+  ToggleScoreboard:
+    description: Toggle on or off the server scoreboard.
+    aliases: tsb
+  EnderChest:
+    description: View a players ender chest.
+    aliases: [echest, ec]
+  ReWarn:
+    description: Rewarn a player.
+  ReMute:
+    description: Remute a player.
+  ReTempMute:
+    description: Temporarily remute a player.
+  ReBan:
+    description: Reban a player.
+  ReTempBan:
+    description: Temporarily reban a player.
+  ReBlacklist:
+    description: Reblacklist a player.
+  ServerManager:
+    description: Manage the server.
+    aliases: sm
+  Ping:
+    description: Get a players ping.
+  Reports:
+    description: View a players report history.
+    aliases: cr
+  ClearReports:
+    description: Clear a players report history.
+    aliases: crh
+  Seen:
+    description: Get info on a player.
+    aliases: [pinfo, pi, playerinfo]
+  RankDisguise:
+    description: Disguise a players rank.
+  Nickname:
+    description: Set your or another players nickname.
+    aliases: nick
+  RealName:
+    description: Get the real name behind a nickname.
+  Tags:
+    description: Set your tag.
+  Tag:
+    description: Manage tags.
+  User:
+    description: Add remove or list permissions under a user.
+    aliases: player
+  Powertool:
+    description: Set a powertool.
+    aliases: pt
+  Find:
+    description: Find a player connected to the server.
+  Server:
+    description: Send yourself to a server.
+  Send:
+    description: Send yourself or another player to a server.
+  GList:
+    description: List all servers and their players.
+  Hub:
+    description: Travel to the hub server.
+    aliases: [lobby, l]
+  Spawn:
+    description: Travel to spawn.
+  Skull:
+    description: Get a players skull.
+  ItemName:
+    description: Rename an item.
+    aliases: iname
+  Message:
+    description: Message a player.
+    aliases: [msg, whisper, w, tell, t]
+  Reply:
+    description: Reply to a player messaging you.
+    aliases: r
+  Fastreload:
+    description: Reload the plugin.
+    aliases: freload

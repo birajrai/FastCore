@@ -8,3 +8,4 @@ target/plugins.lnk
 target/original-FastCore-1.0.0.jar
 /.idea
 .gitattributes
+target/FastCore-1.0.0-shaded.jar

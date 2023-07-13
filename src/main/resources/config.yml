@@ -1165,7 +1165,7 @@ Scoreboard:
   Enabled: true
   Global:
     Enabled: true
-    Title: "&3&lFastCore &7| &bNetwork"
+    Title: "&3&lFastCore"
     Board:
       - "&7&m-----------------------"
       - "&3&lOnline:"
